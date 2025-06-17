@@ -60,17 +60,39 @@ def process_cipher():
     
 
 #creating the gui for the caeser cipher pragram
-window= tk.TK()#this creates the main window object in tkinter, parent widget which holds the other widgets
-window.title("THE CAESER CIPHER PROGRAM") #this sets the title top bar of the window 
-window.geometry("700x500") #sets the size of the window in pixels
+window= tk.Tk() #this creates the main window object in tkinter, parent widget which holds the other widgets
+window.title("CAESER CIPHER") #this sets the title top bar of the window 
+window.geometry("800x600") #sets the size of the window in pixels
 window.resizable(False,False) #this disables the resizing of the window
 
+#label title for the page
+tk.Label(window, text="THE CAESER CIPHER PROGRAM", font=('Times New Roman', 18,'bold italic')).pack(pady=8)
 
+#creating the radio buttons for the mode selection
+mode_var = tk.StringVar(value='ENCRYPT') #StringVar holds the selected mode either encrypt or decrypt and default is encrypt as first encrypt to decrypt
+tk.Label(window, text='Select Mode:', font=('Times New Roman', 14,'bold')).pack(anchor=tk.W,padx=20) #creates a label with text in courier font and size 14 and bold, saying select mode
+tk.Radiobutton(window, text='ENCRYPT', variable= mode_var, value='ENCRYPT',font=('Times New Roman', 11,'bold')).pack(anchor=tk.W, padx=20) #creates a radio button for encrypt and positioned in west and padding horizontally 20 pixels
+tk.Radiobutton(window,  text='DECRYPT', variable =mode_var, value = 'DECRYPT',font=('Times New Roman', 11,'bold')).pack(anchor=tk.W,padx=20) #does the same for the decrypt radio button
 
-    
-    
-    
-    
+#taking message input from the user
+tk.Label(window, text='Enter Message: ',font=('Times New Roman', 14, 'bold' )).pack(anchor=tk.W,padx=20) #this creates a label to enter message
+message_entry= tk.Text(window, height=6, width=54, font=('Times New Roman', 12))
+message_entry.pack(anchor=tk.W,padx=20) #this creates a text box to enter the message with height 6 and width 54 and font size 12
+
+#taking shift value input from the user
+tk.Label(window, text='Enter the shift value(1-25): ', font=('Times New Roman', 14, 'bold')).pack(anchor=tk.W,padx=20) #this creates the label to enter the shift value
+shift_entry = tk.Entry(window,font=('Times New Roman', 12))#this creates an entry box to enter the shift value with font size 12
+shift_entry.pack(anchor=tk.W,padx=20) 
+
+#creating the button which call the function process_cipher
+tk.Button(window, text='CIPHER', command=process_cipher,font=('Times New Roman',14)).pack(pady=10)
+
+#result display box
+tk.Label(window, text='Result: ', font=('Times New Roman',14,'bold')).pack(anchor=tk.W,padx=20)
+result_text =tk.Text(window,height=6,width = 54,state='disabled',font=('Times New Roman',12))
+result_text.pack(anchor=tk.W,padx=20) #this creates a text box to display the result with height 6 and width 54 and font size 12, state is disabled so that the user can't edit the output message
+
+window.mainloop()
     
     
     
