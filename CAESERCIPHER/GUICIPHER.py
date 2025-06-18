@@ -126,7 +126,3 @@ result_text =tk.Text(result_frame,height=6,width = 54,state='disabled',font=('Ti
 result_text.grid(row=1,column=0,columnspan=2,pady=5) #this creates a text box to display the result with height 6 and width 54 and font size 12, state is disabled so that the user can't edit the output message
 
 window.mainloop()
-    
-    
-    
-  
