@@ -20,8 +20,8 @@ This project goes beyond just the alphabet and supports the entire printable ASC
 - Tkinter (Module of Python)
 
 ### Installation
-Clone the repository: 
--'''bash
--cd CAESERCIPHER
--py GUICIPHER.py
+Clone the repository:    
+'''bash  
+cd CAESERCIPHER
+py GUICIPHER.py
 
