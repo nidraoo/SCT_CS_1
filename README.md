@@ -21,7 +21,7 @@ This project goes beyond just the alphabet and supports the entire printable ASC
 
 ### Installation
 '''bash   
-git clone "https://github.com/nidraoo/SCT_CS_1"    
+git clone "https://github.com/nidraoo/SCT_CS_1.git"    
 cd CAESERCIPHER   
 py GUICIPHER.py
 
