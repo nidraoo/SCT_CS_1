@@ -21,7 +21,7 @@ This project goes beyond just the alphabet and supports the entire printable ASC
 
 ### Installation
 Clone the repository: 
-'''bash
-cd CAESERCIPHER
-py GUICIPHER.py
+-'''bash
+-cd CAESERCIPHER
+-py GUICIPHER.py
 
