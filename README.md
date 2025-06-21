@@ -15,12 +15,14 @@ This project goes beyond just the alphabet and supports the entire printable ASC
 - Validations for the input messages and shift value and helpful error messages
 - Read-Only result box to prevent accidental edits from the user
 
+
+
 ### Prerequisites 
 - Python 3.x
 - Tkinter (Module of Python)
 
 ### Installation
-'''bash   
+```bash
 git clone https://github.com/nidraoo/SCT_CS_1.git               
 cd CAESERCIPHER   
 py GUICIPHER.py
