@@ -15,7 +15,17 @@ This project goes beyond just the alphabet and supports the entire printable ASC
 - Validations for the input messages and shift value and helpful error messages
 - Read-Only result box to prevent accidental edits from the user
 
+## How It Works
 
+1. **Select Mode:** Choose between **Encrypt** or **Decrypt** using radio buttons.
+2. **Enter Message:** Type your message in the text box (supports letters, digits, and symbols).
+3. **Set Shift Value:** Enter a number between **1 and 25** as the Caesar Cipher shift.
+4. **Convert:**
+   - Click the **Convert** button to encrypt or decrypt the message.
+   - Output is shown in a read-only box below.
+5. **Extra Features:**
+   -  **Copy Result**: Copies the output to clipboard.
+   -  **Clear All**: Clears all input and output fields for a fresh start.
 
 ### Prerequisites 
 - Python 3.x
